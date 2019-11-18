@@ -469,6 +469,7 @@ section div .aboutContainer {
 
 .aboutCard{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 4% 0;
 }
@@ -476,7 +477,11 @@ section div .aboutContainer {
 section div .aboutContainer .aboutCard div img {
   border: 2px solid red;
   border-radius: 100%;
-  width: 60%;
+  width: 90%;
+}
+
+.odd {
+  flex-direction: row-reverse;
 }
 
 .aboutCard div {
@@ -485,10 +490,17 @@ section div .aboutContainer .aboutCard div img {
   align-items: center;
 }
 
+.aboutTextContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-right: 6%;
+}
+
 .aboutText {
 
   line-height: 1.5;
-  // margin: 4% 0;
+  // margin: 0 10%;
   font-size: 1.2rem;
   padding: 10%;
   background: black;

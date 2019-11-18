@@ -368,18 +368,28 @@ header img {
 }
 .aboutCard {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 4% 0;
 }
 section div .aboutContainer .aboutCard div img {
   border: 2px solid red;
   border-radius: 100%;
-  width: 60%;
+  width: 90%;
+}
+.odd {
+  flex-direction: row-reverse;
 }
 .aboutCard div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.aboutTextContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-right: 6%;
 }
 .aboutText {
   line-height: 1.5;
