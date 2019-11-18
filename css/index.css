@@ -223,7 +223,7 @@ h2 {
 .homepageHeader .filter {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .homepageHeader .filter .titleDivContainer {
   width: 100%;
@@ -237,9 +237,15 @@ h2 {
   width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .homepageHeader .filter .titleDivContainer .maybeLogo img {
   width: 70%;
+}
+.homepageHeader .filter .titleDivContainer .maybeLogo p {
+  color: white;
+  font-size: 1.2rem;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv {
   width: 50%;
@@ -251,7 +257,7 @@ h2 {
 }
 .homepageHeader .filter .titleDivContainer .titleDiv h1 {
   text-align: center;
-  color: #152130;
+  color: white;
   margin: 15% 5% 4% 4%;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div {
