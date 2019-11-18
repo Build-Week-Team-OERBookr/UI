@@ -198,11 +198,11 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .navDiv {
   width: 100%;
@@ -219,6 +219,7 @@ h2 {
   // font-size: 1.6rem;
   position: sticky;
   top: 0;
+  box-shadow: 5px 5px 5px #888888;
 
   // @media (min-height: 300px) {
   //   {
@@ -251,10 +252,11 @@ h2 {
   background-image: url(../images/whiteshelf.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
   .filter {
     width: 100%;
     height: 100%;
@@ -280,11 +282,12 @@ h2 {
         align-items: center;
         flex-direction: column;
         img {
-          width: 70%;
+          width: 60%;
         }
         p {
           color: white;
           font-size: 1.2rem;
+          margin-left: 15%;
 
         }
       }
@@ -296,12 +299,15 @@ h2 {
         justify-content: center;
         align-items: center;
         margin-left: 5%;
+        margin-top: 2%;
+        
 
         h1 {
           text-align: center;
           // color: #152130;
           color: white;
-          margin: 15% 5% 4% 4%;
+          // margin: 15% 5% 15% 4%;
+          margin-bottom: 4%;
         } //end h1
 
         div {
@@ -309,7 +315,7 @@ h2 {
           width: 25%;
           font-size: 2.5rem;
           text-decoration: none;
-          margin: 4% 0;
+          margin: 0 0 4% 0;
           border-radius: 5px;
           // background-color: rgba(5, 23, 46, .5);
           background-color: @ctaColor;
@@ -352,9 +358,12 @@ h2 {
 // }
 
 .midsection {
-  background: #e6e6e6;
-  margin-top: 4%;
+  // background: #e6e6e6;
+  // margin-top: 4%;
   // background: #aeaeae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 10%;
   padding-top: 5%;
   div {
@@ -370,26 +379,48 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin: 5% 0;
+  width: 80%;
 }
 
 .cardContainer {
+  // margin: 0;
   // width: 500px;
-  width: 25%;
-  border: 1px solid @accentColor;
-  border-radius: 5px;
-  padding: 2% 1%;
+  width: 20%;
+  // height: 500px;
+  // border: 1px solid black;
+  // border-radius: 5px;
+  // padding: 2% 1%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .cardContainer .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  // margin: 0;
+}
+.card div {
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 3% 0;
+
 }
 
 .cardContainer .card .paraDiv {
-  padding: 5%;
+  padding: 0 5%;
   line-height: 1.5;
   text-align: left;
+  margin-bottom: 4%;
 }
 
 .buttonDiv {
@@ -406,6 +437,7 @@ h2 {
 }
 
 .bottomSection {
+  background: #f0f0f0;
   div {
     text-align: center;
     // padding: 21% 0;
@@ -435,7 +467,19 @@ footer {
 //begin about us styling
 .aboutBody{
   // background: black;
-  background: rgba(0,0,0,.9);
+  // background: rgba(0,0,0,.9);
+  // background-image: url(../images/brown_mud_02_diff_4k.jpg);
+  // background-image: url("../images/navybackground.png");
+  // background: #1f5d66;
+  // background: #143a40;
+  background: #0b2024;
+
+
+  // background-position: 50% 50%;
+  background-size: cover;
+  // height: 100vh;
+  
+
   color: white;
 }
 
@@ -475,7 +519,7 @@ section div .aboutContainer {
 }
 
 section div .aboutContainer .aboutCard div img {
-  border: 2px solid red;
+  // border: 2px solid red;
   border-radius: 100%;
   width: 90%;
 }
@@ -503,8 +547,23 @@ section div .aboutContainer .aboutCard div img {
   // margin: 0 10%;
   font-size: 1.2rem;
   padding: 10%;
-  background: black;
+  // background: #1f5d66;
+  background: #143a40;;
   width: 90%;
   border-radius: 1%;
+}
+
+.aboutFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  background: white;
+  color: black;
+
+  p {
+    padding: 1% 0;
+    color: black;
+  }
 }
 

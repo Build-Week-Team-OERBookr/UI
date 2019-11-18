@@ -179,10 +179,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 .navDiv {
   width: 100%;
@@ -193,6 +193,7 @@ h2 {
   padding: 1%;
   position: sticky;
   top: 0;
+  box-shadow: 5px 5px 5px #888888;
 }
 .navDiv .logo {
   width: 18%;
@@ -215,10 +216,11 @@ h2 {
   background-image: url(../images/whiteshelf.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 .homepageHeader .filter {
   width: 100%;
@@ -241,11 +243,12 @@ h2 {
   flex-direction: column;
 }
 .homepageHeader .filter .titleDivContainer .maybeLogo img {
-  width: 70%;
+  width: 60%;
 }
 .homepageHeader .filter .titleDivContainer .maybeLogo p {
   color: white;
   font-size: 1.2rem;
+  margin-left: 15%;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv {
   width: 50%;
@@ -254,18 +257,19 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-left: 5%;
+  margin-top: 2%;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv h1 {
   text-align: center;
   color: white;
-  margin: 15% 5% 4% 4%;
+  margin-bottom: 4%;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div {
   text-align: center;
   width: 25%;
   font-size: 2.5rem;
   text-decoration: none;
-  margin: 4% 0;
+  margin: 0 0 4% 0;
   border-radius: 5px;
   background-color: #37adbf;
 }
@@ -283,8 +287,9 @@ h2 {
   color: #05172e;
 }
 .midsection {
-  background: #e6e6e6;
-  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 10%;
   padding-top: 5%;
 }
@@ -298,22 +303,36 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin: 5% 0;
+  width: 80%;
 }
 .cardContainer {
-  width: 25%;
-  border: 1px solid #2a8391;
-  border-radius: 5px;
-  padding: 2% 1%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #888888;
 }
 .cardContainer .card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+.card div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin: 3% 0;
 }
 .cardContainer .card .paraDiv {
-  padding: 5%;
+  padding: 0 5%;
   line-height: 1.5;
   text-align: left;
+  margin-bottom: 4%;
 }
 .buttonDiv {
   background: #2a8391;
@@ -325,6 +344,9 @@ h2 {
   color: white;
   font-size: 1.1rem;
   padding: 10%;
+}
+.bottomSection {
+  background: #f0f0f0;
 }
 .bottomSection div {
   text-align: center;
@@ -346,7 +368,8 @@ footer p {
   color: white;
 }
 .aboutBody {
-  background: rgba(0, 0, 0, 0.9);
+  background: #0b2024;
+  background-size: cover;
   color: white;
 }
 header {
@@ -373,7 +396,6 @@ header img {
   margin: 4% 0;
 }
 section div .aboutContainer .aboutCard div img {
-  border: 2px solid red;
   border-radius: 100%;
   width: 90%;
 }
@@ -395,7 +417,19 @@ section div .aboutContainer .aboutCard div img {
   line-height: 1.5;
   font-size: 1.2rem;
   padding: 10%;
-  background: black;
+  background: #143a40;
   width: 90%;
   border-radius: 1%;
+}
+.aboutFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  background: white;
+  color: black;
+}
+.aboutFooter p {
+  padding: 1% 0;
+  color: black;
 }
