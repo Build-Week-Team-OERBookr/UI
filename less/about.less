@@ -1,6 +1,10 @@
 .aboutBody {
-  background: #0b2024;
-  background-size: cover;
+  background: rgb(22, 65, 73);
+  background: linear-gradient(
+    170deg,
+    rgba(22, 65, 73, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   color: white;
 }
 
@@ -9,21 +13,19 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 1%;
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     margin-top: 2%;
-
   }
-  @media (max-width: 925px){
+  @media (max-width: 925px) {
     flex-direction: column;
   }
   h1 {
     color: white;
-    @media (max-width: 1200px){
+    @media (max-width: 1200px) {
       font-size: 3rem;
-
     }
 
-    @media (max-width: 925px){
+    @media (max-width: 925px) {
       margin-bottom: 1%;
     }
   } //end h1
@@ -32,7 +34,7 @@ header {
     @media @tablet {
       width: 30%;
     }
-    @media (max-width: 700px){
+    @media (max-width: 700px) {
       width: 45%;
     }
 
@@ -56,7 +58,7 @@ section {
           align-items: center;
           margin-top: 15%;
         }
-        
+
         .aboutTitleDiv {
           display: flex;
           flex-direction: column;
@@ -65,7 +67,7 @@ section {
             justify-content: center;
             width: 70%;
           }
-          @media @mobile{
+          @media @mobile {
             width: 100%;
           }
           h3 {
@@ -76,7 +78,7 @@ section {
           img {
             border-radius: 100%;
             width: 90%;
-            @media @tablet{
+            @media @tablet {
               width: 70%;
             }
           } //end img
@@ -90,7 +92,7 @@ section {
             margin: 4% 0;
             width: 80%;
           }
-          @media @mobile{
+          @media @mobile {
             width: 100%;
           }
           .aboutText {
@@ -121,11 +123,10 @@ section {
   display: flex;
   justify-content: center;
   margin-bottom: 0;
-  background: white;
-  color: black;
+  background: #164149;
 
   p {
     padding: 1% 0;
-    color: black;
+    color: white;
   }
 }

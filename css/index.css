@@ -174,7 +174,6 @@ button,
 * {
   max-width: 100%;
   box-sizing: border-box;
-  border: 1px solid red !important;
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -545,8 +544,8 @@ footer p {
   color: white;
 }
 .aboutBody {
-  background: #0b2024;
-  background-size: cover;
+  background: #164149;
+  background: linear-gradient(170deg, #164149 0%, #ffffff 100%);
   color: white;
 }
 header {
@@ -683,10 +682,9 @@ section div .aboutContainer .odd {
   display: flex;
   justify-content: center;
   margin-bottom: 0;
-  background: white;
-  color: black;
+  background: #164149;
 }
 .aboutFooter p {
   padding: 1% 0;
-  color: black;
+  color: white;
 }
