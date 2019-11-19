@@ -174,7 +174,6 @@ button,
 * {
   max-width: 100%;
   box-sizing: border-box;
-  border: 1px solid red !important;
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -224,11 +223,16 @@ h2 {
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
+  margin: 1% 0;
+  border-bottom: 1px solid transparent;
+}
+.navDiv nav a:hover {
+  border-bottom: 1px solid #2a8391;
+  color: #2a8391;
 }
 @media (max-width: 605px) {
   .navDiv nav a {
     padding: 1% 0;
-    width: 100%;
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;

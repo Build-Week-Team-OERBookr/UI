@@ -34,13 +34,20 @@
       font-size: 1.5rem;
       text-decoration: none;
       color: black;
+      margin: 1% 0;
+      border-bottom: 1px solid transparent;
+
+      &:hover{
+        border-bottom: 1px solid @accentColor;
+        color: @accentColor;
+      }
 
       @media @mobile {
         padding: 1% 0;
-        width: 100%;
         text-align: center;
         font-size: 1.2rem;
         letter-spacing: .1rem;
+        
 
       }
     }
