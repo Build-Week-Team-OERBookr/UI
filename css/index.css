@@ -242,10 +242,12 @@ h2 {
   background-position: 50% 50%;
   background-size: cover;
   height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 0;
+}
+@media (max-width: 605px) {
+  .homepageHeader {
+    height: 50vh;
+  }
 }
 .homepageHeader .filter {
   width: 100%;
@@ -268,9 +270,9 @@ h2 {
   margin-bottom: 3%;
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 @media (max-width: 1000px) {
   .homepageHeader .filter .titleDivContainer .maybeLogo {
@@ -287,13 +289,18 @@ h2 {
 }
 @media (max-width: 605px) {
   .homepageHeader .filter .titleDivContainer .maybeLogo img {
-    width: 80%;
+    width: 60%;
   }
 }
 .homepageHeader .filter .titleDivContainer .maybeLogo p {
   color: white;
   font-size: 1.2rem;
   margin-left: 15%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo p {
+    font-size: 1rem;
+  }
 }
 .homepageHeader .filter .titleDivContainer .titleDiv {
   width: 50%;
@@ -327,6 +334,11 @@ h2 {
 @media (max-width: 1000px) {
   .homepageHeader .filter .titleDivContainer .titleDiv h1 {
     font-size: 4rem;
+  }
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 2.3rem;
   }
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div {
@@ -372,6 +384,7 @@ h2 {
 @media (max-width: 605px) {
   .homepageHeader .filter .titleDivContainer .titleDiv div a {
     padding: 2% 0;
+    font-size: 1.5rem;
   }
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div a:hover {
@@ -380,6 +393,7 @@ h2 {
 .midsection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 10%;
   padding-top: 5%;
@@ -408,12 +422,15 @@ h2 {
 .midsection .rowOfCards {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 5% 0;
   width: 100%;
 }
 @media (max-width: 900px) {
   .midsection .rowOfCards {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -426,6 +443,7 @@ h2 {
   width: 20%;
   display: flex;
   justify-content: center;
+  align-items: center;
   box-shadow: 5px 5px 5px #888888;
 }
 @media (max-width: 1300px) {
@@ -442,7 +460,7 @@ h2 {
 }
 @media (max-width: 605px) {
   .midsection .rowOfCards .cardContainer {
-    width: 90%;
+    width: 70%;
   }
 }
 .midsection .rowOfCards .cardContainer .card {
@@ -536,6 +554,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 0;
   background: #2a8391;
 }
@@ -681,6 +700,7 @@ section div .aboutContainer .odd {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 0;
   background: #164149;
 }
