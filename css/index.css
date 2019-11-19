@@ -487,15 +487,21 @@ h2 {
   margin-bottom: 4%;
 }
 .midsection2 {
+  margin-top: 4% 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  padding-bottom: 4%;
 }
 .midsection2 .mid2Paras {
-  padding: 4% 15%;
+  padding: 4% 4%;
+  width: 49%;
+}
+.midsection2 .mid2Paras h2 {
+  text-align: center;
+}
+.midsection2 .mid2Paras p {
+  margin: 4%;
 }
 .midsection2 .mid2Paras p a {
   text-decoration: none;
@@ -511,6 +517,7 @@ h2 {
   background-position: 50% 50%;
   background-size: cover;
   height: 500px;
+  margin-top: 5%;
 }
 .bottomSection .bottomFilter {
   width: 100%;
