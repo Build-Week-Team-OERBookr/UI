@@ -191,27 +191,48 @@ h2 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.85);
-  padding: 1%;
+  padding: 0.5%;
   position: sticky;
   top: 0;
   box-shadow: 5px 5px 5px #888888;
 }
-.navDiv .logo {
-  width: 18%;
-  display: flex;
-  align-items: center;
+@media (max-width: 605px) {
+  .navDiv {
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+  }
 }
 .navDiv nav {
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 1.5rem;
+}
+@media (max-width: 840px) {
+  .navDiv nav {
+    width: 100%;
+  }
+}
+@media (max-width: 605px) {
+  .navDiv nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .navDiv nav a {
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 605px) {
+  .navDiv nav a {
+    padding: 1% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 .homepageHeader {
   background-image: url(../images/whiteshelf.jpg);
@@ -235,6 +256,11 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer {
+    flex-direction: column;
+  }
+}
 .homepageHeader .filter .titleDivContainer .maybeLogo {
   margin-bottom: 3%;
   width: 50%;
@@ -243,8 +269,18 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo {
+    width: 100%;
+  }
+}
 .homepageHeader .filter .titleDivContainer .maybeLogo img {
   width: 60%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo img {
+    width: 80%;
+  }
 }
 .homepageHeader .filter .titleDivContainer .maybeLogo p {
   color: white;
@@ -260,6 +296,11 @@ h2 {
   margin-left: 5%;
   margin-top: 2%;
 }
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv {
+    width: 100%;
+  }
+}
 .homepageHeader .filter .titleDivContainer .titleDiv h1 {
   text-align: center;
   color: white;
@@ -274,6 +315,11 @@ h2 {
   border-radius: 5px;
   background-color: #37adbf;
 }
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 40%;
+  }
+}
 .homepageHeader .filter .titleDivContainer .titleDiv div:hover {
   background-image: none;
   background-color: white;
@@ -284,6 +330,11 @@ h2 {
   color: white;
   padding: 6% 7%;
 }
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div a {
+    padding: 2% 0;
+  }
+}
 .homepageHeader .filter .titleDivContainer .titleDiv div a:hover {
   color: #05172e;
 }
@@ -293,6 +344,11 @@ h2 {
   align-items: center;
   padding-bottom: 10%;
   padding-top: 5%;
+}
+@media (max-width: 605px) {
+  .midsection {
+    margin-top: 4%;
+  }
 }
 .midsection div {
   text-align: center;
@@ -306,11 +362,24 @@ h2 {
   margin: 5% 0;
   width: 100%;
 }
+@media (max-width: 605px) {
+  .midsection .rowOfCards {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
 .midsection .rowOfCards .cardContainer {
   width: 20%;
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 5px #888888;
+}
+@media (max-width: 605px) {
+  .midsection .rowOfCards .cardContainer {
+    width: 50%;
+    margin: 4% 0;
+  }
 }
 .midsection .rowOfCards .cardContainer .card {
   display: flex;
@@ -367,6 +436,11 @@ h2 {
   border-radius: 5px;
   background-color: #37adbf;
 }
+@media (max-width: 605px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 20%;
+  }
+}
 .bottomSection .bottomFilter .bottomBtn:hover {
   background-color: white;
 }
@@ -375,6 +449,11 @@ h2 {
   text-decoration: none;
   color: white;
   padding: 6% 7%;
+}
+@media (max-width: 605px) {
+  .bottomSection .bottomFilter .bottomBtn a {
+    padding: 3% 0;
+  }
 }
 .bottomSection .bottomFilter .bottomBtn a:hover {
   color: #05172e;

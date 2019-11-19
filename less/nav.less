@@ -4,27 +4,45 @@
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.85);
-  padding: 1%;
+  padding: .5%;
   position: sticky;
   top: 0;
   box-shadow: 5px 5px 5px #888888;
 
-  .logo {
-    width: 18%;
-    display: flex;
-    align-items: center;
+  @media @mobile {
+    background: rgba(255, 255, 255, .1);
+    position: relative;
   }
+
   nav {
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 1.5rem;
+
+    @media (max-width: 840px){
+      width: 100%;
+    }
+
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     a {
       font-size: 1.5rem;
       text-decoration: none;
       color: black;
+
+      @media @mobile {
+        padding: 1% 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+
+      }
     }
   }
 } //end navdiv
