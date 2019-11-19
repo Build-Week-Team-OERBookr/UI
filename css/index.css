@@ -299,51 +299,40 @@ h2 {
 .midsection div h2 {
   padding-top: 4%;
 }
-.rowOfCards {
+.midsection .rowOfCards {
   display: flex;
   justify-content: space-around;
   margin: 5% 0;
   width: 80%;
 }
-.cardContainer {
+.midsection .rowOfCards .cardContainer {
   width: 20%;
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 5px #888888;
 }
-.cardContainer .card {
+.midsection .rowOfCards .cardContainer .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.card div {
+.midsection .rowOfCards .cardContainer .card div {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-.card h3 {
+.midsection .rowOfCards .cardContainer .card h3 {
   font-size: 1.3rem;
   margin: 3% 0;
 }
-.cardContainer .card .paraDiv {
+.midsection .rowOfCards .cardContainer .card .paraDiv {
   padding: 0 5%;
   line-height: 1.5;
   text-align: left;
   margin-bottom: 4%;
-}
-.buttonDiv {
-  background: #2a8391;
-  width: 30%;
-}
-.buttonDiv a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  padding: 10%;
 }
 .bottomSection {
   background-image: url(../images/books.jpg);
@@ -417,42 +406,42 @@ header h1 {
 header img {
   width: 23%;
 }
-.aboutContainer h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 4% 0;
-}
-.aboutCard {
+section div .aboutContainer .aboutCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 4% 0;
+}
+section div .aboutContainer .aboutCard div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section div .aboutContainer .aboutCard div h3 {
+  font-size: 2.5rem;
+  text-align: center;
   margin: 4% 0;
 }
 section div .aboutContainer .aboutCard div img {
   border-radius: 100%;
   width: 90%;
 }
-.odd {
-  flex-direction: row-reverse;
-}
-.aboutCard div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aboutTextContainer {
+section div .aboutContainer .aboutCard .aboutTextContainer {
   width: 60%;
   display: flex;
   justify-content: center;
   margin-right: 6%;
 }
-.aboutText {
+section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
   line-height: 1.5;
   font-size: 1.2rem;
   padding: 10%;
   background: #143a40;
   width: 90%;
   border-radius: 1%;
+}
+section div .aboutContainer .odd {
+  flex-direction: row-reverse;
 }
 .aboutFooter {
   width: 100%;

@@ -221,13 +221,6 @@ h2 {
   top: 0;
   box-shadow: 5px 5px 5px #888888;
 
-  // @media (min-height: 300px) {
-  //   {
-  //     position: sticky;
-  //     top: 0;
-  //   }
-  // }
-
   .logo {
     width: 18%;
     display: flex;
@@ -345,14 +338,6 @@ h2 {
   } //end filter
 } //end header
 
-// section {
-//   div{
-//     text-align: center;
-//     margin: 21% 0;
-
-//   }
-// }
-
 .midsection {
   // background: #e6e6e6;
   // margin-top: 4%;
@@ -368,85 +353,60 @@ h2 {
     // padding: 21% 0;
     h2 {
       padding-top: 4%;
-    }
-  }
-}
+    } //end h2
+  } //end div
 
-.rowOfCards {
-  display: flex;
-  justify-content: space-around;
-  margin: 5% 0;
-  width: 80%;
-}
+  .rowOfCards {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+    width: 80%;
 
-.cardContainer {
-  // background: white;
-  // margin: 0;
-  // width: 500px;
-  width: 20%;
-  // height: 500px;
-  // border: 1px solid black;
-  // border-radius: 5px;
-  // padding: 2% 1%;
-  display: flex;
-  justify-content: center;
-  box-shadow: 5px 5px 5px #888888;
-}
+    .cardContainer {
+      // background: white;
+      // margin: 0;
+      // width: 500px;
+      width: 20%;
+      // height: 500px;
+      // border: 1px solid black;
+      // border-radius: 5px;
+      // padding: 2% 1%;
+      display: flex;
+      justify-content: center;
+      box-shadow: 5px 5px 5px #888888;
 
-.cardContainer .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // margin: 0;
-}
-.card div {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin: 3% 0;
-}
-
-.cardContainer .card .paraDiv {
-  padding: 0 5%;
-  line-height: 1.5;
-  text-align: left;
-  margin-bottom: 4%;
-}
-
-.buttonDiv {
-  background: @accentColor;
-  width: 30%;
-}
-
-.buttonDiv a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  padding: 10%;
-}
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // margin: 0;
+        div {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+        } //end div
+        h3 {
+          font-size: 1.3rem;
+          margin: 3% 0;
+        } //end h3
+        .paraDiv {
+          padding: 0 5%;
+          line-height: 1.5;
+          text-align: left;
+          margin-bottom: 4%;
+        } //end paraDiv
+      } //end card
+    } //end cardContainer
+  } //end rowOfCards
+} //end midsection
 
 .bottomSection {
-  // background: rgb(42, 131, 145);
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(42, 131, 145, 1) 28%,
-  //   rgba(255, 255, 255, 1) 100%
-  // );
-
-  // color: white;
-
-  
   background-image: url(../images/books.jpg);
   background-position: 50% 50%;
-        background-size: cover;
+  background-size: cover;
   // background: #f0f0f0;
   // background-image: url(../images/library.jpg);
   height: 500px;
@@ -488,9 +448,9 @@ h2 {
       &:hover {
         // background-image: none;
         background-color: white;
-        
+
         // border-color: rgb(5, 23, 46);
-      }
+      } //end bottomBtn hover
 
       a {
         display: block;
@@ -503,11 +463,11 @@ h2 {
         &:hover {
           color: rgb(5, 23, 46);
           // border: 3px solid rgb(5, 23, 46);
-        }
-      }
-    } //end div
-  }
-}
+        } //end a hover
+      } //end a
+    } //end bottomBtn
+  } //end bottom filter
+} //end bottom section
 
 footer {
   width: 100%;
@@ -519,10 +479,11 @@ footer {
   p {
     padding: 1% 0;
     color: white;
-  }
-}
+  } //end p
+} //end footer
 
 //begin about us styling
+
 .aboutBody {
   // background: black;
   // background: rgba(0,0,0,.9);
@@ -544,67 +505,60 @@ header {
   justify-content: center;
   align-items: center;
   padding-top: 1%;
-}
+  h1 {
+    color: white;
+  } //end h1
+  img {
+    width: 23%;
+  } //end img
+} //end header
 
-header h1 {
-  color: white;
-}
-
-header img {
-  width: 23%;
-}
-
-section div .aboutContainer {
-  // background: blue;
-  // width: 500px;
-}
-
-.aboutContainer h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 4% 0;
-}
-
-.aboutCard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4% 0;
-}
-
-section div .aboutContainer .aboutCard div img {
-  // border: 2px solid red;
-  border-radius: 100%;
-  width: 90%;
-}
-
-.odd {
-  flex-direction: row-reverse;
-}
-
-.aboutCard div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.aboutTextContainer {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  margin-right: 6%;
-}
-
-.aboutText {
-  line-height: 1.5;
-  // margin: 0 10%;
-  font-size: 1.2rem;
-  padding: 10%;
-  // background: #1f5d66;
-  background: #143a40;
-  width: 90%;
-  border-radius: 1%;
-}
+section {
+  div {
+    .aboutContainer {
+      .aboutCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4% 0;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 4% 0;
+          } //end h3
+          img {
+            // border: 2px solid red;
+            border-radius: 100%;
+            width: 90%;
+          } //end img
+        } //end div
+        .aboutTextContainer {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          margin-right: 6%;
+          .aboutText {
+            line-height: 1.5;
+            // margin: 0 10%;
+            font-size: 1.2rem;
+            padding: 10%;
+            // background: #1f5d66;
+            background: #143a40;
+            width: 90%;
+            border-radius: 1%;
+          }
+        } //end aboutTextContainer
+      } //aboutCard
+      .odd {
+        flex-direction: row-reverse;
+      } //end odd
+    } //end aboutContainer
+  } //end div
+} //end section
 
 .aboutFooter {
   width: 100%;
