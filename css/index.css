@@ -174,6 +174,7 @@ button,
 * {
   max-width: 100%;
   box-sizing: border-box;
+  border: 1px solid red !important;
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -197,7 +198,6 @@ h2 {
 }
 @media (max-width: 605px) {
   .navDiv {
-    background: rgba(255, 255, 255, 0.1);
     position: relative;
   }
 }
@@ -555,11 +555,46 @@ header {
   align-items: center;
   padding-top: 1%;
 }
+@media (max-width: 1200px) {
+  header {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 925px) {
+  header {
+    flex-direction: column;
+  }
+}
 header h1 {
   color: white;
 }
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 925px) {
+  header h1 {
+    margin-bottom: 1%;
+  }
+}
 header img {
   width: 23%;
+}
+@media (max-width: 1000px) {
+  header img {
+    width: 30%;
+  }
+}
+@media (max-width: 700px) {
+  header img {
+    width: 45%;
+  }
+}
+@media (max-width: 605px) {
+  header img {
+    width: 50%;
+  }
 }
 section div .aboutContainer .aboutCard {
   display: flex;
@@ -567,25 +602,60 @@ section div .aboutContainer .aboutCard {
   align-items: center;
   margin: 4% 0;
 }
-section div .aboutContainer .aboutCard div {
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section div .aboutContainer .aboutCard div h3 {
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv {
+    justify-content: center;
+    width: 70%;
+  }
+}
+@media (max-width: 605px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv {
+    width: 100%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv h3 {
   font-size: 2.5rem;
   text-align: center;
   margin: 4% 0;
 }
-section div .aboutContainer .aboutCard div img {
+section div .aboutContainer .aboutCard .aboutTitleDiv img {
   border-radius: 100%;
   width: 90%;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv img {
+    width: 70%;
+  }
 }
 section div .aboutContainer .aboutCard .aboutTextContainer {
   width: 60%;
   display: flex;
   justify-content: center;
   margin-right: 6%;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer {
+    margin: 4% 0;
+    width: 80%;
+  }
+}
+@media (max-width: 605px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer {
+    width: 100%;
+  }
 }
 section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
   line-height: 1.5;
@@ -595,8 +665,18 @@ section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
   width: 90%;
   border-radius: 1%;
 }
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
+    font-size: 1rem;
+  }
+}
 section div .aboutContainer .odd {
   flex-direction: row-reverse;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .odd {
+    flex-direction: column;
+  }
 }
 .aboutFooter {
   width: 100%;
