@@ -256,7 +256,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 605px) {
+@media (max-width: 1000px) {
   .homepageHeader .filter .titleDivContainer {
     flex-direction: column;
   }
@@ -268,6 +268,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo {
+    width: 90%;
+  }
 }
 @media (max-width: 605px) {
   .homepageHeader .filter .titleDivContainer .maybeLogo {
@@ -301,10 +306,25 @@ h2 {
     width: 100%;
   }
 }
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv {
+    width: 80%;
+  }
+}
 .homepageHeader .filter .titleDivContainer .titleDiv h1 {
   text-align: center;
   color: white;
   margin-bottom: 4%;
+}
+@media (max-width: 1370px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 4rem;
+  }
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div {
   text-align: center;
@@ -318,6 +338,22 @@ h2 {
 @media (max-width: 605px) {
   .homepageHeader .filter .titleDivContainer .titleDiv div {
     width: 40%;
+  }
+}
+@media (max-width: 1370px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 30%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1167px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 40%;
+  }
+}
+@media (max-width: 863) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 60%;
   }
 }
 .homepageHeader .filter .titleDivContainer .titleDiv div:hover {
@@ -356,17 +392,31 @@ h2 {
 .midsection div h2 {
   padding-top: 4%;
 }
+@media (max-width: 605px) {
+  .midsection div h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .midsection div h2 {
+    padding: 4% 2% 0 2%;
+  }
+}
 .midsection .rowOfCards {
   display: flex;
   justify-content: space-around;
   margin: 5% 0;
   width: 100%;
 }
-@media (max-width: 605px) {
+@media (max-width: 900px) {
   .midsection .rowOfCards {
     flex-direction: column;
-    margin: 0;
     align-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .midsection .rowOfCards {
+    justify-content: center;
   }
 }
 .midsection .rowOfCards .cardContainer {
@@ -375,10 +425,21 @@ h2 {
   justify-content: center;
   box-shadow: 5px 5px 5px #888888;
 }
-@media (max-width: 605px) {
+@media (max-width: 1300px) {
+  .midsection .rowOfCards .cardContainer {
+    margin: 0 2%;
+    width: 28%;
+  }
+}
+@media (max-width: 900px) {
   .midsection .rowOfCards .cardContainer {
     width: 50%;
     margin: 4% 0;
+  }
+}
+@media (max-width: 605px) {
+  .midsection .rowOfCards .cardContainer {
+    width: 90%;
   }
 }
 .midsection .rowOfCards .cardContainer .card {
@@ -437,6 +498,16 @@ h2 {
   background-color: #37adbf;
 }
 @media (max-width: 605px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 15%;
+  }
+}
+@media (max-width: 820px) {
   .bottomSection .bottomFilter .bottomBtn {
     width: 20%;
   }
