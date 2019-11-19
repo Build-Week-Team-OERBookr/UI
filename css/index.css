@@ -395,7 +395,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 4%;
   padding-top: 5%;
 }
 @media (max-width: 605px) {
@@ -485,6 +485,26 @@ h2 {
   line-height: 1.5;
   text-align: left;
   margin-bottom: 4%;
+}
+.midsection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-bottom: 4%;
+}
+.midsection2 .mid2Paras {
+  padding: 4% 15%;
+}
+.midsection2 .mid2Paras p a {
+  text-decoration: none;
+}
+.midsection2 .mid2Paras p a span {
+  color: grey;
+}
+.midsection2 .mid2Paras p a span:hover {
+  color: #404040;
 }
 .bottomSection {
   background-image: url(../images/books.jpg);
@@ -657,6 +677,19 @@ section div .aboutContainer .aboutCard .aboutTitleDiv img {
   section div .aboutContainer .aboutCard .aboutTitleDiv img {
     width: 70%;
   }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2%;
+  background: #164149;
+  padding: 2%;
+  border-radius: 5px;
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv a:hover {
+  color: #164149;
+  background: white;
 }
 section div .aboutContainer .aboutCard .aboutTextContainer {
   width: 60%;
