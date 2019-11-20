@@ -238,7 +238,7 @@ h2 {
   }
 }
 .homepageHeader {
-  background-image: url(../images/whiteshelf.jpg);
+  background-image: url(../images/whiteshelf200.jpg);
   background-position: 50% 50%;
   background-size: cover;
   height: 80vh;
@@ -804,7 +804,7 @@ section div .aboutContainer .odd {
   color: white;
 }
 .about2Header {
-  background-image: url(/images/whitelib.jpg);
+  background-image: url(/images/whitelib300.jpg);
   background-position: 50% 50%;
   background-size: cover;
   height: 30vh;
