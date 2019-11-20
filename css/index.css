@@ -826,24 +826,24 @@ section div .aboutContainer .odd {
   width: 75%;
   margin: 0 auto;
 }
-.missionStatment {
+.container .missionStatment {
   font-size: 1.2rem;
   padding: 8% 25%;
   margin: 8% 0;
   line-height: 1.5;
 }
 @media (max-width: 1000px) {
-  .missionStatment {
+  .container .missionStatment {
     font-size: 1rem;
     padding: 8% 15%;
   }
 }
 @media (max-width: 605px) {
-  .missionStatment {
+  .container .missionStatment {
     padding: 8% 0;
   }
 }
-.teamTitle {
+.container .teamTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -852,30 +852,30 @@ section div .aboutContainer .odd {
   margin-bottom: 12%;
 }
 @media (max-width: 1000px) {
-  .teamTitle {
+  .container .teamTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
-.teamTitle h2 {
+.container .teamTitle h2 {
   color: white;
 }
 @media (max-width: 900px) {
-  .teamTitle h2 {
+  .container .teamTitle h2 {
     font-size: 2rem;
   }
 }
-.teamTitle img {
+.container .teamTitle img {
   width: 30%;
 }
 @media (max-width: 900px) {
-  .teamTitle img {
+  .container .teamTitle img {
     width: 40%;
   }
 }
-.about2Body .rowOfCards {
+.container .rowOfCards {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -883,7 +883,7 @@ section div .aboutContainer .odd {
   width: 100%;
 }
 @media (max-width: 900px) {
-  .about2Body .rowOfCards {
+  .container .rowOfCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -891,11 +891,11 @@ section div .aboutContainer .odd {
   }
 }
 @media (max-width: 1300px) {
-  .about2Body .rowOfCards {
+  .container .rowOfCards {
     justify-content: center;
   }
 }
-.about2Body .rowOfCards .cardContainer {
+.container .rowOfCards .cardContainer {
   width: 20%;
   display: flex;
   justify-content: center;
@@ -903,51 +903,51 @@ section div .aboutContainer .odd {
   box-shadow: 5px 5px 5px #888888;
 }
 @media (max-width: 1300px) {
-  .about2Body .rowOfCards .cardContainer {
+  .container .rowOfCards .cardContainer {
     margin: 0 2%;
     width: 28%;
   }
 }
 @media (max-width: 900px) {
-  .about2Body .rowOfCards .cardContainer {
+  .container .rowOfCards .cardContainer {
     width: 80%;
     margin: 10% 0;
   }
 }
 @media (max-width: 605px) {
 }
-.about2Body .rowOfCards .cardContainer .card {
+.container .rowOfCards .cardContainer .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.about2Body .rowOfCards .cardContainer .card .imgDiv {
+.container .rowOfCards .cardContainer .card .imgDiv {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-.about2Body .rowOfCards .cardContainer .card h3 {
+.container .rowOfCards .cardContainer .card h3 {
   font-size: 1.3rem;
   margin: 3% 0;
 }
-.about2Body .rowOfCards .cardContainer .card .paraDiv {
+.container .rowOfCards .cardContainer .card .paraDiv {
   padding: 0 5%;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 4%;
 }
-.about2Body .rowOfCards .cardContainer .card .paraDiv .transText {
+.container .rowOfCards .cardContainer .card .paraDiv .transText {
   color: transparent;
 }
-.about2Body .rowOfCards .cardContainer .card .buttonDiv {
+.container .rowOfCards .cardContainer .card .buttonDiv {
   background: #2a8391;
   width: 25%;
   margin-bottom: 4%;
 }
-.about2Body .rowOfCards .cardContainer .card .buttonDiv a {
+.container .rowOfCards .cardContainer .card .buttonDiv a {
   color: white;
   text-decoration: none;
   display: block;
