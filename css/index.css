@@ -803,3 +803,19 @@ section div .aboutContainer .odd {
   padding: 1% 0;
   color: white;
 }
+.about2Body {
+  background: grey;
+}
+.about2Body .about2Header {
+  background-image: url(/images/whitelib.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+}
+.about2Body .about2Header .filter {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
