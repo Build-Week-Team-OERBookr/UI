@@ -244,6 +244,7 @@ h2 {
   align-items: center;
   background: rgba(255, 255, 255, 0.85);
   padding: 0.5%;
+  z-index: 100;
   position: sticky;
   top: 0;
   box-shadow: 5px 5px 5px #888888;
@@ -675,6 +676,11 @@ h2 {
     width: 20%;
   }
 }
+@media (max-width: 420px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 25%;
+  }
+}
 .bottomSection .bottomFilter .bottomBtn:hover {
   background-color: white;
 }
@@ -915,12 +921,23 @@ section div .aboutContainer .odd {
     font-size: 2rem;
   }
 }
+@media (max-width: 420px) {
+  .container .teamTitle h2 {
+    font-size: 1.8rem;
+  }
+}
 .container .teamTitle img {
   width: 30%;
 }
 @media (max-width: 900px) {
   .container .teamTitle img {
     width: 40%;
+  }
+}
+@media (max-width: 420px) {
+  .container .teamTitle img {
+    width: 55%;
+    margin-top: 4%;
   }
 }
 .container .rowOfCards {
