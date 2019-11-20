@@ -244,6 +244,11 @@ h2 {
   height: 80vh;
   padding: 0;
 }
+@media (max-width: 1000px) {
+  .homepageHeader {
+    background-position: 45% 50%;
+  }
+}
 @media (max-width: 605px) {
   .homepageHeader {
     height: 50vh;
@@ -320,6 +325,11 @@ h2 {
   .homepageHeader .filter .titleDivContainer .titleDiv {
     width: 80%;
   }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv a {
+  color: white;
+  margin-top: -2.5%;
+  letter-spacing: 0.05rem;
 }
 .homepageHeader .filter .titleDivContainer .titleDiv h1 {
   text-align: center;
@@ -493,24 +503,69 @@ h2 {
   align-items: center;
   font-size: 1.5rem;
 }
-.midsection2 .mid2Paras {
+@media (max-width: 1000px) {
+  .midsection2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.midsection2 .mid2Para {
   padding: 4% 4%;
   width: 49%;
 }
-.midsection2 .mid2Paras h2 {
+@media (max-width: 1000px) {
+  .midsection2 .mid2Para {
+    width: 80%;
+  }
+}
+.midsection2 .mid2Para h2 {
   text-align: center;
 }
-.midsection2 .mid2Paras p {
+.midsection2 .mid2Para p {
   margin: 4%;
 }
-.midsection2 .mid2Paras p a {
+@media (max-width: 1000px) {
+  .midsection2 .mid2Para p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .midsection2 .mid2Para p {
+    font-size: 1.3rem;
+  }
+}
+.midsection2 .mid2Para p a {
   text-decoration: none;
 }
-.midsection2 .mid2Paras p a span {
+.midsection2 .mid2Para p a span {
   color: grey;
 }
-.midsection2 .mid2Paras p a span:hover {
+.midsection2 .mid2Para p a span:hover {
   color: #404040;
+}
+.midsection2 .mid2Img {
+  padding: 4% 4%;
+  width: 49%;
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Img img {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .midsection2 .mid2Img img {
+    display: none;
+  }
 }
 .bottomSection {
   background-image: url(../images/books.jpg);
