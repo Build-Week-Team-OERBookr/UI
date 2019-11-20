@@ -31,6 +31,15 @@
     padding: 8% 25%;
     margin: 8% 0;
     line-height: 1.5;
+
+    @media @tablet{
+        font-size: 1rem;
+        padding: 8% 15%;
+    }
+
+    @media @mobile {
+        padding: 8% 0;
+    }
 }
 
 .teamTitle {
@@ -38,11 +47,22 @@
     background: @accentColor;
     padding: 4% 0;
     margin-bottom: 12%;
+
+    @media @tablet {
+        .flexV(center, center);
+    }//end tablet
+    
     h2 {
         color: white;
+        @media (max-width: 900px){
+            font-size: 2rem;
+        }
     }//end h2
     img {
         width: 30%;
+        @media (max-width: 900px){
+            width: 40%;
+        }
     }
 }//end teamTitle
 
@@ -71,12 +91,12 @@
       }
 
       @media (max-width: 900px) {
-        width: 50%;
-        margin: 4% 0;
+        width: 80%;
+        margin: 10% 0;
       }
 
       @media @mobile {
-        width: 70%;
+        // width: 85%;
       }
 
       .card {
