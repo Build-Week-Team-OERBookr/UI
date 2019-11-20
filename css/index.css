@@ -832,6 +832,17 @@ section div .aboutContainer .odd {
   margin: 8% 0;
   line-height: 1.5;
 }
+@media (max-width: 1000px) {
+  .missionStatment {
+    font-size: 1rem;
+    padding: 8% 15%;
+  }
+}
+@media (max-width: 605px) {
+  .missionStatment {
+    padding: 8% 0;
+  }
+}
 .teamTitle {
   display: flex;
   justify-content: center;
@@ -840,11 +851,29 @@ section div .aboutContainer .odd {
   padding: 4% 0;
   margin-bottom: 12%;
 }
+@media (max-width: 1000px) {
+  .teamTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .teamTitle h2 {
   color: white;
 }
+@media (max-width: 900px) {
+  .teamTitle h2 {
+    font-size: 2rem;
+  }
+}
 .teamTitle img {
   width: 30%;
+}
+@media (max-width: 900px) {
+  .teamTitle img {
+    width: 40%;
+  }
 }
 .about2Body .rowOfCards {
   display: flex;
@@ -881,14 +910,11 @@ section div .aboutContainer .odd {
 }
 @media (max-width: 900px) {
   .about2Body .rowOfCards .cardContainer {
-    width: 50%;
-    margin: 4% 0;
+    width: 80%;
+    margin: 10% 0;
   }
 }
 @media (max-width: 605px) {
-  .about2Body .rowOfCards .cardContainer {
-    width: 70%;
-  }
 }
 .about2Body .rowOfCards .cardContainer .card {
   display: flex;
