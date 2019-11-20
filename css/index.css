@@ -1,0 +1,930 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+  * Show the overflow in IE.
+  * 1. Show the overflow in Edge.
+  */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+  * 1. Remove the inheritance of text transform in Firefox.
+  */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+  * Correct the inability to style clickable types in iOS and Safari.
+  */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+.navDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5%;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 5px 5px #888888;
+}
+@media (max-width: 605px) {
+  .navDiv {
+    position: relative;
+  }
+}
+.navDiv nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 840px) {
+  .navDiv nav {
+    width: 100%;
+  }
+}
+@media (max-width: 605px) {
+  .navDiv nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.navDiv nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin: 1% 0;
+  border-bottom: 1px solid transparent;
+}
+.navDiv nav a:hover {
+  border-bottom: 1px solid #2a8391;
+  color: #2a8391;
+}
+@media (max-width: 605px) {
+  .navDiv nav a {
+    padding: 1% 0;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+}
+.homepageHeader {
+  background-image: url(../images/whiteshelf.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 80vh;
+  padding: 0;
+}
+@media (max-width: 1000px) {
+  .homepageHeader {
+    background-position: 45% 50%;
+  }
+}
+@media (max-width: 605px) {
+  .homepageHeader {
+    height: 50vh;
+  }
+}
+.homepageHeader .filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.homepageHeader .filter .titleDivContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer {
+    flex-direction: column;
+  }
+}
+.homepageHeader .filter .titleDivContainer .maybeLogo {
+  margin-bottom: 3%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo {
+    width: 90%;
+  }
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo {
+    width: 100%;
+  }
+}
+.homepageHeader .filter .titleDivContainer .maybeLogo img {
+  width: 60%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo img {
+    width: 60%;
+  }
+}
+.homepageHeader .filter .titleDivContainer .maybeLogo p {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 15%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .maybeLogo p {
+    font-size: 1rem;
+  }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv {
+    width: 80%;
+  }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv a {
+  color: white;
+  margin-top: -2.5%;
+  letter-spacing: 0.05rem;
+}
+.homepageHeader .filter .titleDivContainer .titleDiv h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 4%;
+}
+@media (max-width: 1370px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv h1 {
+    font-size: 2.3rem;
+  }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv div {
+  text-align: center;
+  width: 25%;
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin: 0 0 4% 0;
+  border-radius: 5px;
+  background-color: #37adbf;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 40%;
+  }
+}
+@media (max-width: 1370px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 30%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1167px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 40%;
+  }
+}
+@media (max-width: 863) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div {
+    width: 60%;
+  }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv div:hover {
+  background-image: none;
+  background-color: white;
+}
+.homepageHeader .filter .titleDivContainer .titleDiv div a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 6% 7%;
+}
+@media (max-width: 605px) {
+  .homepageHeader .filter .titleDivContainer .titleDiv div a {
+    padding: 2% 0;
+    font-size: 1.5rem;
+  }
+}
+.homepageHeader .filter .titleDivContainer .titleDiv div a:hover {
+  color: #05172e;
+}
+.midsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4%;
+  padding-top: 5%;
+}
+@media (max-width: 605px) {
+  .midsection {
+    margin-top: 4%;
+  }
+}
+.midsection div {
+  text-align: center;
+}
+.midsection div h2 {
+  padding-top: 4%;
+}
+@media (max-width: 605px) {
+  .midsection div h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .midsection div h2 {
+    padding: 4% 2% 0 2%;
+  }
+}
+.midsection .rowOfCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 0;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .midsection .rowOfCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .midsection .rowOfCards {
+    justify-content: center;
+  }
+}
+.midsection .rowOfCards .cardContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #888888;
+}
+@media (max-width: 1300px) {
+  .midsection .rowOfCards .cardContainer {
+    margin: 0 2%;
+    width: 28%;
+  }
+}
+@media (max-width: 900px) {
+  .midsection .rowOfCards .cardContainer {
+    width: 50%;
+    margin: 4% 0;
+  }
+}
+@media (max-width: 605px) {
+  .midsection .rowOfCards .cardContainer {
+    width: 70%;
+  }
+}
+.midsection .rowOfCards .cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.midsection .rowOfCards .cardContainer .card div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.midsection .rowOfCards .cardContainer .card h3 {
+  font-size: 1.3rem;
+  margin: 3% 0;
+}
+.midsection .rowOfCards .cardContainer .card .paraDiv {
+  padding: 0 5%;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 4%;
+}
+.midsection2 {
+  margin-top: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .midsection2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.midsection2 .mid2Para {
+  padding: 4% 4%;
+  width: 49%;
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Para {
+    width: 80%;
+  }
+}
+.midsection2 .mid2Para h2 {
+  text-align: center;
+}
+.midsection2 .mid2Para p {
+  margin: 4%;
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Para p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .midsection2 .mid2Para p {
+    font-size: 1.3rem;
+  }
+}
+.midsection2 .mid2Para p a {
+  text-decoration: none;
+}
+.midsection2 .mid2Para p a span {
+  color: grey;
+}
+.midsection2 .mid2Para p a span:hover {
+  color: #404040;
+}
+.midsection2 .mid2Img {
+  padding: 4% 4%;
+  width: 49%;
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  .midsection2 .mid2Img img {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .midsection2 .mid2Img img {
+    display: none;
+  }
+}
+.bottomSection {
+  background-image: url(../images/books.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 500px;
+  margin-top: 5%;
+}
+.bottomSection .bottomFilter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.bottomSection .bottomFilter .bottomTitle {
+  text-align: center;
+  margin: 4% 0;
+}
+.bottomSection .bottomFilter .bottomTitle h2 {
+  padding-top: 4%;
+  color: white;
+}
+.bottomSection .bottomFilter .bottomBtn {
+  text-align: center;
+  width: 10%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 0 0 4% 0;
+  border-radius: 5px;
+  background-color: #37adbf;
+}
+@media (max-width: 605px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 15%;
+  }
+}
+@media (max-width: 820px) {
+  .bottomSection .bottomFilter .bottomBtn {
+    width: 20%;
+  }
+}
+.bottomSection .bottomFilter .bottomBtn:hover {
+  background-color: white;
+}
+.bottomSection .bottomFilter .bottomBtn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 6% 7%;
+}
+@media (max-width: 605px) {
+  .bottomSection .bottomFilter .bottomBtn a {
+    padding: 3% 0;
+  }
+}
+.bottomSection .bottomFilter .bottomBtn a:hover {
+  color: #05172e;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  background: #2a8391;
+}
+footer p {
+  padding: 1% 0;
+  color: white;
+}
+.aboutBody {
+  background: #164149;
+  background: linear-gradient(170deg, #164149 0%, #ffffff 100%);
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+}
+@media (max-width: 1200px) {
+  header {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 925px) {
+  header {
+    flex-direction: column;
+  }
+}
+header h1 {
+  color: white;
+}
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 925px) {
+  header h1 {
+    margin-bottom: 1%;
+  }
+}
+header img {
+  width: 23%;
+}
+@media (max-width: 1000px) {
+  header img {
+    width: 30%;
+  }
+}
+@media (max-width: 700px) {
+  header img {
+    width: 45%;
+  }
+}
+@media (max-width: 605px) {
+  header img {
+    width: 50%;
+  }
+}
+section div .aboutContainer .aboutCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% 0;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv {
+    justify-content: center;
+    width: 70%;
+  }
+}
+@media (max-width: 605px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv {
+    width: 100%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 4% 0;
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv img {
+  border-radius: 100%;
+  width: 90%;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTitleDiv img {
+    width: 70%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2%;
+  background: #164149;
+  padding: 2%;
+  border-radius: 5px;
+}
+section div .aboutContainer .aboutCard .aboutTitleDiv a:hover {
+  color: #164149;
+  background: white;
+}
+section div .aboutContainer .aboutCard .aboutTextContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-right: 6%;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer {
+    margin: 4% 0;
+    width: 80%;
+  }
+}
+@media (max-width: 605px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer {
+    width: 100%;
+  }
+}
+section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  padding: 10%;
+  background: #143a40;
+  width: 90%;
+  border-radius: 1%;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .aboutCard .aboutTextContainer .aboutText {
+    font-size: 1rem;
+  }
+}
+section div .aboutContainer .odd {
+  flex-direction: row-reverse;
+}
+@media (max-width: 1000px) {
+  section div .aboutContainer .odd {
+    flex-direction: column;
+  }
+}
+.aboutFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  background: #164149;
+}
+.aboutFooter p {
+  padding: 1% 0;
+  color: white;
+}
+.about2Header {
+  background-image: url(/images/whitelib.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+}
+.about2Header .filter {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about2Header .filter h1 {
+  color: white;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.missionStatment {
+  font-size: 1.2rem;
+  padding: 8% 25%;
+  margin: 8% 0;
+  line-height: 1.5;
+}
+.teamTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a8391;
+  padding: 4% 0;
+  margin-bottom: 12%;
+}
+.teamTitle h2 {
+  color: white;
+}
+.teamTitle img {
+  width: 30%;
+}
+.about2Body .rowOfCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 0;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .about2Body .rowOfCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .about2Body .rowOfCards {
+    justify-content: center;
+  }
+}
+.about2Body .rowOfCards .cardContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #888888;
+}
+@media (max-width: 1300px) {
+  .about2Body .rowOfCards .cardContainer {
+    margin: 0 2%;
+    width: 28%;
+  }
+}
+@media (max-width: 900px) {
+  .about2Body .rowOfCards .cardContainer {
+    width: 50%;
+    margin: 4% 0;
+  }
+}
+@media (max-width: 605px) {
+  .about2Body .rowOfCards .cardContainer {
+    width: 70%;
+  }
+}
+.about2Body .rowOfCards .cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about2Body .rowOfCards .cardContainer .card .imgDiv {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.about2Body .rowOfCards .cardContainer .card h3 {
+  font-size: 1.3rem;
+  margin: 3% 0;
+}
+.about2Body .rowOfCards .cardContainer .card .paraDiv {
+  padding: 0 5%;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 4%;
+}
+.about2Body .rowOfCards .cardContainer .card .paraDiv .transText {
+  color: transparent;
+}
+.about2Body .rowOfCards .cardContainer .card .buttonDiv {
+  background: #2a8391;
+  width: 25%;
+  margin-bottom: 4%;
+}
+.about2Body .rowOfCards .cardContainer .card .buttonDiv a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10%;
+  text-align: center;
+}

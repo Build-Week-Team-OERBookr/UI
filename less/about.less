@@ -1,0 +1,147 @@
+.aboutBody {
+  background: rgb(22, 65, 73);
+  background: linear-gradient(
+    170deg,
+    rgba(22, 65, 73, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: white;
+}
+
+header {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .flexH (center, center);
+  padding-top: 1%;
+  @media (max-width: 1200px) {
+    margin-top: 2%;
+  }
+  @media (max-width: 925px) {
+    flex-direction: column;
+  }
+  h1 {
+    color: white;
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 925px) {
+      margin-bottom: 1%;
+    }
+  } //end h1
+  img {
+    width: 23%;
+    @media @tablet {
+      width: 30%;
+    }
+    @media (max-width: 700px) {
+      width: 45%;
+    }
+
+    @media @mobile {
+      width: 50%;
+    }
+  } //end img
+} //end header
+
+section {
+  div {
+    .aboutContainer {
+      .aboutCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4% 0;
+        @media @tablet {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 15%;
+        }
+
+        .aboutTitleDiv {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media @tablet {
+            justify-content: center;
+            width: 70%;
+          }
+          @media @mobile {
+            width: 100%;
+          }
+          h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 4% 0;
+          } //end h3
+          img {
+            border-radius: 100%;
+            width: 90%;
+            @media @tablet {
+              width: 70%;
+            }
+          } //end img
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            margin-top: 2%;
+            background: rgb(22, 65, 73);
+            padding: 2%;
+            border-radius: 5px;
+            &:hover{
+              color: rgb(22, 65, 73);
+              background: white;
+            }
+          }//end a
+        } //end div
+        .aboutTextContainer {
+          width: 60%;
+          display: flex;
+          justify-content: center;
+          margin-right: 6%;
+          @media @tablet {
+            margin: 4% 0;
+            width: 80%;
+          }
+          @media @mobile {
+            width: 100%;
+          }
+          .aboutText {
+            line-height: 1.5;
+            font-size: 1.2rem;
+            padding: 10%;
+            background: #143a40;
+            width: 90%;
+            border-radius: 1%;
+            @media @tablet {
+              font-size: 1rem;
+            }
+          }
+        } //end aboutTextContainer
+      } //aboutCard
+      .odd {
+        flex-direction: row-reverse;
+        @media @tablet {
+          flex-direction: column;
+        }
+      } //end odd
+    } //end aboutContainer
+  } //end div
+} //end section
+
+.aboutFooter {
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  .flexH (center, center);
+  margin-bottom: 0;
+  background: #164149;
+
+  p {
+    padding: 1% 0;
+    color: white;
+  }
+}
