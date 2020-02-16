@@ -1,20 +1,5 @@
-# UI
+# OER Bookr Marketing and About Us Pages
 
-OER Bookr
-Where teachers search for textbooks.
+https://oerbookr2019.netlify.com/
 
-- What problem does your app solve?
-
-It saves an educator the time and resources requried to seek out high-quality, open licensed text books that are peer reviewed. 
-
-- Be as specific as possible; how does your app solve the problem?
-
-Creates a localized space for teachers to use as an open resource for open licensed text books. 
-
-- What is the mission statement?
-
-We aim to provide a comprehensive, affordable resource for educational professionals in a world where the cost of education continues to rise.
-
-
-
-https://www.notion.so/OER-Bookr-1f58d8cc7dcb48f4a1dab66d43ef6365
+As part of a team, I created the Marketing and About Us pages for OER Bookr, a source for open source textbooks, using HTML and CSS. I also 3D modelled (and contributed to the design of) our logo in Blender.
